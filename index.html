@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets\images\icons\favicon.ico" type="image/x-icon">
+    <title>Tvelia Travel Agency</title>
+</head>
+
+<body>
+<header class="header fixed-for-popup" id="header">
+    <div class="header__container">
+        <a href="" class="header__logo">
+            <svg width="132" height="37" viewBox="0 0 132 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.3672 8.22656H19.125V36H10.8984V8.22656H0.84375V1.875H29.3672V8.22656Z"
+                    fill="#FF5300" />
+                <path
+                    d="M42.6094 26.6016L46.6172 10.6406H54.9375L46.6641 36H38.6016L30.3281 10.6406H38.6719L42.6094 26.6016ZM69.2344 36.4688C65.3438 36.4688 62.1953 35.3125 59.7891 33C57.3828 30.6719 56.1797 27.6484 56.1797 23.9297V23.2734C56.1797 20.6797 56.6562 18.3906 57.6094 16.4062C58.5781 14.4219 59.9844 12.8906 61.8281 11.8125C63.6719 10.7188 65.8594 10.1719 68.3906 10.1719C71.9531 10.1719 74.7656 11.2812 76.8281 13.5C78.8906 15.7031 79.9219 18.7812 79.9219 22.7344V25.8047H64.2188C64.5 27.2266 65.1172 28.3438 66.0703 29.1562C67.0234 29.9688 68.2578 30.375 69.7734 30.375C72.2734 30.375 74.2266 29.5 75.6328 27.75L79.2422 32.0156C78.2578 33.375 76.8594 34.4609 75.0469 35.2734C73.25 36.0703 71.3125 36.4688 69.2344 36.4688ZM68.3438 16.2656C66.0312 16.2656 64.6562 17.7969 64.2188 20.8594H72.1875V20.25C72.2188 18.9844 71.8984 18.0078 71.2266 17.3203C70.5547 16.6172 69.5938 16.2656 68.3438 16.2656ZM91.4531 36H83.5312V0H91.4531V36ZM104.672 36H96.75V10.6406H104.672V36ZM96.2812 4.10156C96.2812 2.97656 96.6875 2.05469 97.5 1.33594C98.3125 0.617187 99.3672 0.257812 100.664 0.257812C101.961 0.257812 103.016 0.617187 103.828 1.33594C104.641 2.05469 105.047 2.97656 105.047 4.10156C105.047 5.22656 104.641 6.14844 103.828 6.86719C103.016 7.58594 101.961 7.94531 100.664 7.94531C99.3672 7.94531 98.3125 7.58594 97.5 6.86719C96.6875 6.14844 96.2812 5.22656 96.2812 4.10156ZM123.844 36C123.562 35.4844 123.312 34.7266 123.094 33.7266C121.641 35.5547 119.609 36.4688 117 36.4688C114.609 36.4688 112.578 35.75 110.906 34.3125C109.234 32.8594 108.398 31.0391 108.398 28.8516C108.398 26.1016 109.414 24.0234 111.445 22.6172C113.477 21.2109 116.43 20.5078 120.305 20.5078H122.742V19.1719C122.742 16.8438 121.734 15.6797 119.719 15.6797C117.844 15.6797 116.906 16.6016 116.906 18.4453H109.008C109.008 15.9922 110.047 14 112.125 12.4688C114.219 10.9375 116.883 10.1719 120.117 10.1719C123.352 10.1719 125.906 10.9609 127.781 12.5391C129.656 14.1172 130.617 16.2812 130.664 19.0312V30.2578C130.695 32.5859 131.055 34.3672 131.742 35.6016V36H123.844ZM118.898 30.8438C119.883 30.8438 120.695 30.6328 121.336 30.2109C121.992 29.7891 122.461 29.3125 122.742 28.7812V24.7266H120.445C117.695 24.7266 116.32 25.9609 116.32 28.4297C116.32 29.1484 116.562 29.7344 117.047 30.1875C117.531 30.625 118.148 30.8438 118.898 30.8438Z"
+                    fill="black" />
+            </svg>
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a data-goto=".intro" href="#" class="menu__link active">Home</a></li>
+                    <li><a data-goto=".rating" href="#" class="menu__link">About</a></li>
+                    <li><a data-goto=".destinations" href="#" class="menu__link">Adventures</a></li>
+                    <li><a data-goto=".partners" href="#" class="menu__link">Partners</a></li>
+                    <li><a data-goto=".footer" href="#" class="menu__link">Contact</a></li>
+                    <li><a href="#login" class="menu__link link--popup">Login</a></li>
+                    <li><a href="#signup" class="menu__link link--popup">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>    <main class="page">
+        <section class="intro">
+            <div class="intro__container container">
+                <div class="intro__wrapper">
+                    <div class="intro__text">
+                        <div class="intro__inner">
+                            <h1 class="intro__title">Its Time For New<br>
+                                Adventures,Escapes thrills & <br>
+                                experiences</h1>
+                            <div class="intro__play">
+                                <button class="intro__button"><svg width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.212175 1.96008C0.211446 0.663213 1.61489 -0.148122 2.73838 0.499682L10.3219 4.87235C11.4454 5.52016 11.4463 7.14124 10.3235 7.79031L2.74494 12.1715C1.62218 12.8206 0.217822 12.0108 0.217093 10.7139L0.212175 1.96008Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <button class="intro__play-text but">Play Video</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__picture">
+                        <img class="intro__picture--img" src="assets\images\pool.jpg" alt="">
+
+                        <iframe allow="autoplay" class="intro__picture-frame invisible" height="556px" width="833px"
+                            src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="stats">
+            <div class="stats__container container">
+                <div class="stats__item">
+                    <span class="stats__icon icon-taxi"></span>
+                    <mark class="stats__marked">24,000</mark>
+                    <span class="stats__text">Travel Experiences</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__icon icon-earth"></span>
+                    <mark class="stats__marked">55+</mark>
+                    <span class="stats__text">Countries</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__icon icon-money"></span>
+                    <mark class="stats__marked">Best Price</mark>
+                    <span class="stats__text">Guaranteed</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__icon icon-users"></span>
+                    <mark class="stats__marked">84 Million+</mark>
+                    <span class="stats__text">User per year</span>
+                </div>
+            </div>
+        </div>
+        <section class="slider">
+            <div class="slider__container container">
+                <div class="slider__text">
+                    <div class="slider__title">
+                        <h2 class="h2-titles h2-titles--aside">Find The Perfect
+                            Place</h2>
+                    </div>
+                    <div class="slider__subtitle">A list of the top 75 Best Tourist Places to See in world for a perfect
+                        holiday or a trip.</div>
+                    <div class="slider__button-more-wrap button-more-wrap">
+                        <a href="">
+                            <button class="slider__button-more button-more">View More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider__slick-wrap">
+                    <div class="slider__item">
+                        <img data-lazy="assets\images\slider\bangalore.webp" alt="">
+                        <div class="slider__top-text">
+                            <div class="slider__place">Bangalore</div>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img data-lazy="assets\images\slider\coorg.webp" alt="">
+                        <div class="slider__top-text">
+                            <div class="slider__place">Coorg</div>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img data-lazy="assets\images\slider\island.webp" alt="">
+                        <div class="slider__top-text">
+                            <div class="slider__place">Island</div>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <img data-lazy="assets\images\slider\desert.webp" alt="">
+                        <div class="slider__top-text">
+                            <div class="slider__place">Desert</div>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </section>
+        <section class="rating">
+            <div class="container">
+                <h2 class="h2-titles">Top rated Experiences on Travel</h2>
+                <div class="rating__wrapper">
+                    <div class="rating__item">
+                        <div class="rating__img"><img src="assets\images\rating\beach.jpg" alt=""></div>
+                        <h4 class="rating__trip-description"><a href="">Beautiful luxury outdoor swimming pool hotel
+                                resort</a></h4>
+                        <div class="rating__3row"><mark class="rating__place"><a href="">Bangalore</a></mark>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__img"><img src="assets\images\rating\ocean.jpg" alt=""></div>
+                        <h4 class="rating__trip-description"><a href="">Patio balcony with chair around sea ocean
+                                view</a></h4>
+                        <div class="rating__3row"><mark class="rating__place"><a href="">Island</a></mark>
+                            <div class="rating__stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__img"><img src="assets\images\rating\boat.jpg" alt=""></div>
+                        <h4 class="rating__trip-description"><a href="">Athletic man floats red boat river</a></h4>
+                        <div class="rating__3row"><mark class="rating__place"><a href="">South East Asia</a></mark>
+                            <div class="rating__stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating__item">
+                        <div class="rating__img"><img src="assets\images\rating\mountain.jpg" alt=""></div>
+                        <h4 class="rating__trip-description"><a href="">Beautiful hikers top mountain
+                                view </a></h4>
+                        <div class="rating__3row"><mark class="rating__place"><a href="">Himalayan</a></mark>
+                            <div class="rating__stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="destinations">
+            <div class="destinations__container container">
+                <h2 class="h2-titles">Destinations near you</h2>
+                <div class="destinations__wrapper">
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\island.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Island</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\bangalore.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Bangalore</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\kabini.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Kabini</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\coorg.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Coorg</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\lonavala.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Lonavala</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\mumbai.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Mumbai</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\goa.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Goa</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                        </div>
+                    </div>
+                    <div class="destinations__item">
+                        <div class="destinations__img">
+                            <a href=""><img src="assets\images\destinations\ooty.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="destinations__name"><a href="">Ooty</a></div>
+                        <div class="destinations__stars stars">
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-fstar"></span>
+                            <span class="icon-estar"></span>
+                            <span class="icon-estar"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="places">
+            <div class="container">
+                <h2 class="h2-titles">Best Places on Earth</h2>
+                <div class="places__main-wrap">
+                    <div class="places__big-col">
+                        <img src="assets\images\places\aerostats.jpg" alt="">
+                        <div class="places__filter filter"></div>
+                        <div class="places__top-text">
+                            <div class="places__place">Oceania / Africa / US </div>
+                            <div class="places__description">The collection of the Department of Africa.</div>
+                            <div class="stars">
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-fstar"></span>
+                                <span class="icon-estar"></span>
+                            </div>
+                        </div>
+                        <a href="" class="places__slide">View More</a>
+                    </div>
+                    <div class="places__sub-wrap">
+                        <div class="places__item">
+                            <div class="places__small-img places__small-img--top">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\11.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide places__slide--mobile">View More</a>
+                            </div>
+                            <div class="places__small-img">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\12.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide places__slide--mobile">View More</a>
+                            </div>
+                        </div>
+                        <div class="places__item">
+                            <div class="places__small-img places__small-img--top">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\21.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide">View More</a>
+                            </div>
+                            <div class="places__small-img">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\22.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide">View More</a>
+                            </div>
+                        </div>
+                        <div class="places__item">
+                            <div class="places__small-img places__small-img--top">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\31.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide">View More</a>
+                            </div>
+                            <div class="places__small-img">
+                                <div class="places__s-pic">
+                                    <img src="assets\images\places\32.jpg" alt="">
+                                    <div class="places__filter filter"></div>
+                                </div>
+                                <a href="" class="places__slide">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="partners__container container">
+                <h2 class="h2-titles">Our Partners</h2>
+                <div class="partners__wrapper">
+                    <div class="partners__item">
+                        <div class="partners__img">
+                            <a href=""><img src="assets\images\partners\Lara.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partners__name">
+                            <a href="">Lara Nosworthy</a>
+                        </div>
+                    </div>
+                    <div class="partners__item">
+                        <div class="partners__img">
+                            <a href=""><img src="assets\images\partners\Alana.jpg" alt=""></a>
+                        </div>
+                        <div class="partners__name">
+                            <a href="">Alana Baldessin</a>
+                        </div>
+                    </div>
+                    <div class="partners__item">
+                        <div class="partners__img">
+                            <a href=""><img src="assets\images\partners\Emma.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partners__name">
+                            <a href="">Emma Fritzsche</a>
+                        </div>
+                    </div>
+                    <div class="partners__item">
+                        <div class="partners__img">
+                            <a href=""><img src="assets\images\partners\Joel.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="partners__name">
+                            <a href="">Joel Lynas</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="">
+                        <svg width="132" height="37" viewBox="0 0 132 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.3672 8.22656H19.125V36H10.8984V8.22656H0.84375V1.875H29.3672V8.22656Z"
+                                fill="#FF5300" />
+                            <path
+                                d="M42.6094 26.6016L46.6172 10.6406H54.9375L46.6641 36H38.6016L30.3281 10.6406H38.6719L42.6094 26.6016ZM69.2344 36.4688C65.3438 36.4688 62.1953 35.3125 59.7891 33C57.3828 30.6719 56.1797 27.6484 56.1797 23.9297V23.2734C56.1797 20.6797 56.6562 18.3906 57.6094 16.4062C58.5781 14.4219 59.9844 12.8906 61.8281 11.8125C63.6719 10.7188 65.8594 10.1719 68.3906 10.1719C71.9531 10.1719 74.7656 11.2812 76.8281 13.5C78.8906 15.7031 79.9219 18.7812 79.9219 22.7344V25.8047H64.2188C64.5 27.2266 65.1172 28.3438 66.0703 29.1562C67.0234 29.9688 68.2578 30.375 69.7734 30.375C72.2734 30.375 74.2266 29.5 75.6328 27.75L79.2422 32.0156C78.2578 33.375 76.8594 34.4609 75.0469 35.2734C73.25 36.0703 71.3125 36.4688 69.2344 36.4688ZM68.3438 16.2656C66.0312 16.2656 64.6562 17.7969 64.2188 20.8594H72.1875V20.25C72.2188 18.9844 71.8984 18.0078 71.2266 17.3203C70.5547 16.6172 69.5938 16.2656 68.3438 16.2656ZM91.4531 36H83.5312V0H91.4531V36ZM104.672 36H96.75V10.6406H104.672V36ZM96.2812 4.10156C96.2812 2.97656 96.6875 2.05469 97.5 1.33594C98.3125 0.617187 99.3672 0.257812 100.664 0.257812C101.961 0.257812 103.016 0.617187 103.828 1.33594C104.641 2.05469 105.047 2.97656 105.047 4.10156C105.047 5.22656 104.641 6.14844 103.828 6.86719C103.016 7.58594 101.961 7.94531 100.664 7.94531C99.3672 7.94531 98.3125 7.58594 97.5 6.86719C96.6875 6.14844 96.2812 5.22656 96.2812 4.10156ZM123.844 36C123.562 35.4844 123.312 34.7266 123.094 33.7266C121.641 35.5547 119.609 36.4688 117 36.4688C114.609 36.4688 112.578 35.75 110.906 34.3125C109.234 32.8594 108.398 31.0391 108.398 28.8516C108.398 26.1016 109.414 24.0234 111.445 22.6172C113.477 21.2109 116.43 20.5078 120.305 20.5078H122.742V19.1719C122.742 16.8438 121.734 15.6797 119.719 15.6797C117.844 15.6797 116.906 16.6016 116.906 18.4453H109.008C109.008 15.9922 110.047 14 112.125 12.4688C114.219 10.9375 116.883 10.1719 120.117 10.1719C123.352 10.1719 125.906 10.9609 127.781 12.5391C129.656 14.1172 130.617 16.2812 130.664 19.0312V30.2578C130.695 32.5859 131.055 34.3672 131.742 35.6016V36H123.844ZM118.898 30.8438C119.883 30.8438 120.695 30.6328 121.336 30.2109C121.992 29.7891 122.461 29.3125 122.742 28.7812V24.7266H120.445C117.695 24.7266 116.32 25.9609 116.32 28.4297C116.32 29.1484 116.562 29.7344 117.047 30.1875C117.531 30.625 118.148 30.8438 118.898 30.8438Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__text">
+                    An adventure is an exciting experience that is typically bold, sometimes risky or undertaking.
+                    Adventures may be activities with some potential for physical danger such as traveling, exploring,
+                    skydiving, mountain climbing, scuba diving, river rafting or participating in extreme sports.
+                </div>
+                <div class="footer__social social-links">
+                    <a href="" class="social-links__link icon-tumblr"></a>
+                    <a href="" class="social-links__link icon-google"></a>
+                    <a href="" class="social-links__link icon-twitter"></a>
+                    <a href="" class="social-links__link icon-linkedin"></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Useful Links</h3>
+                <ul class="footer__links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Adventure</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Support Links</h3>
+                <ul class="footer__links">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Newsletter Subscription</h3>
+                <ul class="footer__links footer__links--icons">
+                    <li><span class="icon-location"></span><a href="">569 bangalore
+                            Auroville Beach, 560001</a></li>
+                    <li><span class="icon-mail"></span><a
+                            href="mailto:redliodesigns@gmail.com">redliodesigns@gmail.com</a></li>
+                    <li><span class="icon-phone"></span><a href="tel:+15659875689">5659875689</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__hid-pad-bottom"></div>
+    </div>
+</footer><div id="login" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close">
+                <span></span>
+            </a>
+            <h3 class="popup__title">Login</h3>
+            <form action="" class="popup__login-form login-form">
+                <div class="login-form__item login-form__item--input">
+                    <label for="login-email" class="login-form__input-context">email</label>
+                    <input id="login-email" type="email" class="login-form__input" placeholder="example@twelia.com">
+
+                </div>
+                <div class="login-form__item login-form__item--input">
+                    <label for="login-password" class="login-form__input-context">password</label>
+                    <input id="login-password" type="password" class="login-form__input" placeholder="********">
+                </div>
+                <div class="login-form__item login-form__item--add">
+                    <div class="login-form__pass">
+                        <a href="">forgot password?</a>
+                    </div>
+                    <div class="login-form__signup">
+                        not a member?  <a href="#signup" class="link--popup">signup</a>
+                    </div>
+                </div>
+                <div class="login-form__item login-form__item--submit">
+                    <button type="submit" class="login-form__submit">login</button>
+                </div>         
+            </form>
+        </div>
+    </div>
+</div>
+<div id="signup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close">
+                <span></span>
+            </a>
+            <h3 class="popup__title">Signup</h3>
+            <form action="" class="popup__login-form login-form">
+                <div class="login-form__item login-form__item--input">
+                    <label for="login-email" class="login-form__input-context">email</label>
+                    <input id="login-email" type="email" class="login-form__input" placeholder="example@twelia.com">
+
+                </div>
+                <div class="login-form__item login-form__item--input">
+                    <label for="login-password" class="login-form__input-context">password</label>
+                    <input id="login-password" type="password" class="login-form__input" placeholder="********">
+                </div>
+                <div class="login-form__item login-form__item--input">
+                    <label for="login-password" class="login-form__input-context">repeat password</label>
+                    <input id="login-password" type="password" class="login-form__input" placeholder="********">
+                </div>
+                <div class="login-form__item login-form__item--add">    
+                    <div class="login-form__signup">
+                        already have an account?  <a href="#login" class="link--popup">login</a>
+                    </div>
+                </div>
+                <div class="login-form__item login-form__item--submit">
+                    <button type="submit" class="login-form__submit">signup</button>
+                </div>         
+            </form>
+        </div>
+    </div>
+</div><script src="assets\js\header.js"></script>
+<script src="assets\js\jquery-3.6.0.min.js"></script>
+<script src="assets\js\slick.min.js"></script>
+<script src="assets\js\script.js"></script>
+<script src="assets\js\popup.js"></script></body>
+
+</html>
